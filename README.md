@@ -33,4 +33,4 @@ Instale as dependências do projeto:
 execute o seguinte comando no terminal:
 `make run-docs`
 
-Abra o um navegador das internet e visualize este [link](http://127.0.0.1:8000/).
+Abra o navegador da internet e visualize o seguinte [link](http://127.0.0.1:8000/).
