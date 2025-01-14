@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "Libraries"
+version = "0.0.1"
+description = ""
+authors = ["Felipe Savaris <fesavaris@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.6"
+psycopg2-binary = "^2.9.10"
+sqlalchemy = "^2.0.36"
+pydantic = "^2.10.4"
+mkdocs = "^1.6.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
