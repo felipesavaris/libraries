@@ -1,5 +1,5 @@
 site_name: Libraries
 
 nav:
-  - Home: initial.md
+  - Home: index.md
   - Setup: setup.md
