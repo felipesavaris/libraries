@@ -12,6 +12,8 @@ psycopg2-binary = "^2.9.10"
 sqlalchemy = "^2.0.36"
 pydantic = "^2.10.4"
 mkdocs = "^1.6.1"
+alembic = "^1.14.1"
+uvicorn = {extras = ["standard"], version = "^0.34.0"}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"

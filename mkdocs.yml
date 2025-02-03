@@ -3,3 +3,4 @@ site_name: Libraries
 nav:
   - Home: index.md
   - Setup: setup.md
+  - Tools: tools_docs.md
