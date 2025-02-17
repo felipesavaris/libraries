@@ -9,7 +9,13 @@ class Base(BaseModel): ...
 class User(Base):
     name: str
     email: str
+
+
+class UserIn(User):
     password: str
+
+
+class UserOut(User):
     created_at: datetime
     updated_at: datetime
 
