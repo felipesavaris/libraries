@@ -1,9 +1,12 @@
+from dotenv import load_dotenv
 from logging.config import fileConfig
 
 from alembic import context
 from sqlalchemy import Connection, engine_from_config, pool
 
-from src.domain.entities.models import table_registry
+from libraries.domain.entities.models import table_registry
+
+load_dotenv()
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
