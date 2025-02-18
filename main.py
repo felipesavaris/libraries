@@ -1,12 +1,7 @@
-from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from libraries.adapters.inbound.controllers.users import router
-
-
-# load_dotenv(dotenv_path='/Users/felipe.savaris/developer/libraries/.env')
-load_dotenv()
 
 app = FastAPI()
 
