@@ -3,28 +3,28 @@ from datetime import datetime
 from pydantic import BaseModel
 
 
-class Base(BaseModel): ...
+class BaseDTO(BaseModel): ...
 
 
-class User(Base):
+class UserDTO(BaseDTO):
     name: str
     email: str
 
 
-class UserIn(User):
+class UserInDTO(UserDTO):
     password: str
 
 
-class UserOut(User):
+class UserOutDTO(UserDTO):
     created_at: datetime
     updated_at: datetime
 
 
-class Item(Base):
+class ItemDTO(BaseDTO):
     title: str 
     description: str
     autor: str
     genre: str
 
 
-class Libary(Base): ...
+class LibaryDTO(BaseDTO): ...

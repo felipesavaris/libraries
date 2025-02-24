@@ -1,9 +1,9 @@
 from abc import ABC, abstractmethod
 
-from libraries.domain.entities.dtos import UserIn, UserOut
+from libraries.domain.entities.dtos import UserInDTO, UserOutDTO
 
 
 class UserRepository(ABC):
     @abstractmethod
-    def create_user(self, user: UserIn) -> UserOut:
+    def create_user(self, user: UserInDTO) -> UserOutDTO:
         raise NotImplementedError()
