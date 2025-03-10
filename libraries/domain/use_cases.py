@@ -14,3 +14,11 @@ class CreateUserUseCase:
             return self.user_repository.create_user(user)
         except UserAlreadyExistsError as err:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(err)) from err
+
+
+class RetrieveUsersUseCase:
+    def __init__(self, user_repository: UserRepository):
+        self.user_repository = user_repository
+
+    def execute(self, params: UserInDTO) -> list[UserOutDTO]:
+        return self.user_repository.retrieve_users(params)
