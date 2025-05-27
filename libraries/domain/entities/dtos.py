@@ -20,11 +20,11 @@ class UserOutDTO(UserDTO):
     updated_at: datetime
 
 
-class ItemDTO(BaseDTO):
-    title: str 
-    description: str
-    autor: str
-    genre: str
+# class ItemDTO(BaseDTO):
+#     title: str 
+#     description: str
+#     autor: str
+#     genre: str
 
 
-class LibaryDTO(BaseDTO): ...
+# class LibaryDTO(BaseDTO): ...

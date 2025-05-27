@@ -8,7 +8,7 @@ table_registry = registry()
 
 
 @table_registry.mapped_as_dataclass
-class User:
+class UserModel:
     __tablename__ = 'users'
     
     id: Mapped[int] = mapped_column(init=False, primary_key=True)
@@ -19,11 +19,11 @@ class User:
     updated_at: Mapped[datetime] = mapped_column(default=func.now(), onupdate=func.now())
 
 
-class Item:
-    title: str 
-    description: str
-    autor: str
-    genre: str
+# class Item:
+#     title: str 
+#     description: str
+#     autor: str
+#     genre: str
 
 
-class Libary: ...
+# class Libary: ...
